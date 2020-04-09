@@ -14,12 +14,12 @@ try:
     import os
     import time
     from scipy.io.wavfile import write
-    doc = codecs.open('./Thegioi/text', 'r', 'utf-8')
+    doc = codecs.open('./Ykien/text', 'r', 'utf-8')
     content = doc.read()
-    i = 11
+    i = 1
     tokenizer = nltk.data.load('tokenizers/punkt/english.pickle')
     for sentence in tokenizer.tokenize(content):
-        file_name = 'Thegioi_sent' + str(i)
+        file_name = 'Ykien_sent' + str(i)
         i = i+1
         print(sentence)
         print('\n recording.....\n')
